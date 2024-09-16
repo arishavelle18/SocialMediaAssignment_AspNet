@@ -1,0 +1,25 @@
+﻿@model SocialMediaAssignment.Models.SocialMediaLinksOptions
+@{
+    ViewBag.Title = "Home";
+}
+<div class="container mx-auto">
+    <div class="row">
+        <div class="col bg-black text-white rounded mr-2">
+            <a href=@Model.Facebook>Facebook</a>
+        </div>
+        <environment exclude="Development">
+            <div class="col bg-black text-white rounded mr-2">
+                <a href=@Model.Instagram>Instagram</a>
+            </div>
+        </environment>
+       
+        <div class="col bg-black text-white rounded mr-2">
+            <a href=@Model.Twitter>Twitter</a>
+        </div>
+        <div class="col bg-black text-white rounded mr-2">
+            <a href=@Model.Youtube>Youtube</a>
+        </div>
+
+    </div>
+
+</div>
